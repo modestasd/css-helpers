@@ -54,3 +54,34 @@ html {
 		font-size: 75%;
 	}
 }
+
+## Image/Background
+
+### Blend mode 
+
+#### Adds cool blending mode to background image 
+
+.element {
+    background-image: url(backgroundImage);
+    background-color: green;
+    background-blend-mode: hard-light;
+}
+
+### Clip-path
+
+#### Allows to make custom shapes(online generator https://bennettfeely.com/clippy/)
+
+.element {
+    clip-path: polygon(0 0, 100% 0, 100% 53%, 0 86%);
+}
+
+### Gradient
+
+#### Adds custom transition between two or more colors
+
+.element {
+    background-image:linear-gradient(to right bottom,
+        rgba(218, 120, 102, 0.8),
+        rgba(255, 99, 71, 0.7)),
+        url(${backgroundImage});
+}
