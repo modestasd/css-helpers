@@ -33,6 +33,18 @@ Use on block elements that have a defined width
 
 ## Responsive design
 
+### Grid
+
+#### Makes container responsive without media queries
+
+```css
+/// or auto-fill
+.element {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+```
+
 ### rem/em
 
 #### Changes default font size
